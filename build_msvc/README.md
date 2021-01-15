@@ -1,15 +1,15 @@
-Building Vircles Core with Visual Studio
+Building CCGO Core with Visual Studio
 ========================================
 
 Introduction
 ---------------------
-Solution and project files to build the Vircles Core applications `msbuild` or Visual Studio can be found in the build_msvc directory. The build has been tested with Visual Studio 2017 and 2019.
+Solution and project files to build the CCGO Core applications `msbuild` or Visual Studio can be found in the build_msvc directory. The build has been tested with Visual Studio 2017 and 2019.
 
 Building with Visual Studio is an alternative to the Linux based [cross-compiler build](https://github.com/vpubchain/virlces/blob/master/doc/build-windows.md).
 
 Quick Start
 ---------------------
-The minimal steps required to build Vircles Core with the msbuild toolchain are below. More detailed instructions are contained in the following sections.
+The minimal steps required to build CCGO Core with the msbuild toolchain are below. More detailed instructions are contained in the following sections.
 
 ```
 vcpkg install --triplet x64-windows-static boost-filesystem boost-multi-index boost-signals2 boost-test boost-thread libevent zeromq berkeleydb rapidcheck double-conversion
@@ -19,7 +19,7 @@ msbuild /m build_msvc\virlces.sln /p:Platform=x64 /p:Configuration=Release /t:bu
 
 Quick Start
 ---------------------
-The minimal steps required to build Vircles Core with the msbuild toolchain are below. More detailed instructions are contained in the following sections.
+The minimal steps required to build CCGO Core with the msbuild toolchain are below. More detailed instructions are contained in the following sections.
 
 ```
 vcpkg install --triplet x64-windows-static boost-filesystem boost-multi-index boost-signals2 boost-test boost-thread libevent openssl zeromq berkeleydb rapidcheck double-conversion
@@ -29,15 +29,9 @@ msbuild /m build_msvc\virlces.sln /p:Platform=x64 /p:Configuration=Release /t:bu
 
 Dependencies
 ---------------------
-A number of [open source libraries](https://github.com/vpubchain/virlces/blob/master/doc/dependencies.md) are required in order to be able to build Vircles Core.
+A number of open source libraries are required in order to be able to build CCGO Core.
 
-Options for installing the dependencies in a Visual Studio compatible manner are:
-
-- Use Microsoft's [vcpkg](https://docs.microsoft.com/en-us/cpp/vcpkg) to download the source packages and build locally. This is the recommended approach.
-- Download the source code, build each dependency, add the required include paths, link libraries and binary tools to the Visual Studio project files.
-- Use [nuget](https://www.nuget.org/) packages with the understanding that any binary files have been compiled by an untrusted third party.
-
-The [external dependencies](https://github.com/vpubchain/virlces/blob/master/doc/dependencies.md) required for building are:
+The external dependencies required for building are:
 
 - Berkeley DB
 - Boost
@@ -49,9 +43,9 @@ The [external dependencies](https://github.com/vpubchain/virlces/blob/master/doc
 
 Qt
 ---------------------
-In order to build the Vircles Core a static build of Qt is required. The runtime library version (e.g. v141, v142) and platform type (x86 or x64) must also match.
+In order to build the CCGO Core a static build of Qt is required. The runtime library version (e.g. v141, v142) and platform type (x86 or x64) must also match.
 
-A prebuilt version of Qt can be downloaded from [here](https://github.com/sipsorcery/qt_win_binary/releases). Please be aware this download is NOT an officially sanctioned Vircles Core distribution and is provided for developer convenience. It should NOT be used for builds that will be used in a production environment or with real funds.
+A prebuilt version of Qt can be downloaded from [here](https://github.com/sipsorcery/qt_win_binary/releases). Please be aware this download is NOT an officially sanctioned CCGO Core distribution and is provided for developer convenience. It should NOT be used for builds that will be used in a production environment or with real funds.
 
 To build Bitcoin Core without Qt unload or disable the `virlces-qt`, `libvirlces_qt` and `test_vircles-qt` projects.
 
@@ -88,9 +82,9 @@ msbuild /m virlces.sln /p:Platform=x64 /p:Configuration=Release /t:build
 
 AppVeyor
 ---------------------
-The .appveyor.yml in the root directory is suitable to perform builds on [AppVeyor](https://www.appveyor.com/) Continuous Integration servers. The simplest way to perform an AppVeyor build is to fork Vircles Core and then configure a new AppVeyor Project pointing to the forked repository.
+The .appveyor.yml in the root directory is suitable to perform builds on [AppVeyor](https://www.appveyor.com/) Continuous Integration servers. The simplest way to perform an AppVeyor build is to fork CCGO Core and then configure a new AppVeyor Project pointing to the forked repository.
 
-For safety reasons the Vircles Core .appveyor.yml file has the artifact options disabled. The build will be performed but no executable files will be available. To enable artifacts on a forked repository uncomment the lines shown below:
+For safety reasons the CCGO Core .appveyor.yml file has the artifact options disabled. The build will be performed but no executable files will be available. To enable artifacts on a forked repository uncomment the lines shown below:
 
 ```
     #- 7z a virlces-%APPVEYOR_BUILD_VERSION%.zip %APPVEYOR_BUILD_FOLDER%\build_msvc\%platform%\%configuration%\*.exe

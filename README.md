@@ -1,75 +1,23 @@
-Vircles Core integration/staging tree
+CCGO Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/virlces/virlces.svg?branch=master)](https://travis-ci.org/virlces/virlces)
+https://www.qk188.cn
 
-https://virlces.org
-
-What is Vircles?
+What is CCGO?
 ----------------
 
-Vircles is an experimental digital currency that enables instant payments to anyone, anywhere in the world. Vircles uses peer-to-peer technology to operate with no central authority: managing transactions and issuing money are carried out collectively by the network. Vircles Core is the name of open source software which enables the use of this currency.
+CCGO is an experimental digital currency that enables instant payments to anyone, anywhere in the world. CCGO uses peer-to-peer technology to operate with no central authority: managing transactions and issuing money are carried out collectively by the network. CCGO Core is the name of open source software which enables the use of this currency.
+CCGO is a merge-minable SHA256 coin which provides an array of useful services which leverage the bitcoin protocol and blockchain technology.
 
-For more information, as well as an immediately useable, binary version of the Vircles Core software, see https://virlces.org/, or read the [original whitepaper](https://virlces.org/zdag_virlces_whitepaper.pdf).
-
-Vircles is a merge-minable SHA256 coin which provides an array of useful services which leverage the bitcoin protocol and blockchain technology.
-
-888 million total coins (deflation 5 percent per year, deflation on all payouts) Block time: 60 seconds target Rewards: 38.5 Vircless per block deflated 5 percent per year. 10 percent to governance proposals 22.5 percent to miner 67.5 percent to masternode SHA256 Proof of Work Mineable either exclusively or via merge-mining any SHA256 PoW coin Masternode collateral requirement: 100000 Vircless Masternode seniority: 35% increase after 1 year, 100% increase after 2.5 years Governance proposals payout schedule: every month There is a 5% deflation per year on Vircles Governance funding per round (Approx. 2m Vircless per month to start) Governance funding gets 5% deflation per round (superblock). See formula below. Consensus enforced segwit (all transactions have witness programs except coinbase) Codebase based off of latest Bitcoin Core (https://github.com/bitcoin/bitcoin) Services include:
-
-Hybrid layer 2 PoW/PoS consensus with bonded validator system (masternodes) ZDAG technology for point-of-sale speeds and probabilistic confirmations useful for microtransactions Trustless sidechain access to Ethereum and back through a custom permissionless/trustless sidechain technology (SYSX bridge) https://github.com/vpubchain/sysethereum Decentralized governance (blockchain pays for work via proposals and masternode votes) Digital asset creation and management. ZDAG is open-source and developed over the course of 12 months by [Blockchain Foundry Inc](https://www.blockchainfoundry.co/), with external audit done over 6 months by [Whiteblock](https://whiteblock.io). [Performance report can be found here](https://virlces.org/tps_whiteblock_virlces_report.pdf).
-
-Governance formula: We have implemented a % decline schedule — starting the first month with 1500000 SYS and ending on the 24th month with 196708 SYS. After that period, the superblock starts with 151767 SYS a month and will decline 5% every year. Read more about it here: https://medium.com/@virlces/virlces-4-0-rewards-specifications-a3dc01d85adf.
-
-Interoptibility through a trust-less, no custodian, no counterparty bridge to Ethereum. Existing ERC20 assets can move to and from Vircles Platform Tokens at will. This is the first time a fractional supply, two-way bridge has been developed and brought to market. It will enable a scaling infrastructure for Ethereum as well as flexibility for existing Vircles ecosystem. A sharing and collobrative approach to foster growth in the industry was the goal, this is the results of over 18 months of research and development by [Blockchain Foundry Inc](https://www.blockchainfoundry.co/). Documentation can be found [here](https://github.com/vpubchain/sysethereum-docs)
-
-For more information, as well as an immediately useable, binary version of
-the Vircles Core software, see https://virlces.org/, or read the
-[original whitepaper](https://virlces.org/zdag_virlces_whitepaper.pdf).
-
-Vircles is a merge-minable SHA256 coin which provides an array of useful services which leverage the bitcoin protocol and blockchain technology.
-
-888 million total coins (deflation 5 percent per year, deflation on all payouts)
-Block time: 60 seconds target
-Rewards: 38.5 Vircless per block deflated 5 percent per year.
-10 percent to governance proposals
-22.5 percent to miner
-67.5 percent to masternode
-SHA256 Proof of Work
-Mineable either exclusively or via merge-mining any SHA256 PoW coin
-Masternode collateral requirement: 100000 Vircless
-Masternode seniority: 35% increase after 1 year, 100% increase after 2.5 years
-Governance proposals payout schedule: every month
-There is a 5% deflation per year on Vircles
-Governance funding per round (Approx. 2m Vircless per month to start)
-Governance funding gets 5% deflation per round (superblock). See formula below.
-Consensus enforced segwit (all transactions have witness programs except coinbase)
-Codebase based off of latest Bitcoin Core (https://github.com/bitcoin/bitcoin)
-Services include:
-
-Hybrid layer 2 PoW/PoS consensus with bonded validator system (masternodes)
-ZDAG technology for point-of-sale speeds and probabilistic confirmations useful for microtransactions
-Trustless sidechain access to Ethereum and back through a custom permissionless/trustless sidechain technology (SYSX bridge) https://github.com/vpubchain/sysethereum
-Decentralized governance (blockchain pays for work via proposals and masternode votes)
-Digital asset creation and management
-
-Governance formula:
-We have implemented a % decline schedule — starting the first month with 1500000 SYS and ending on the 24th month with 196708 SYS. After that period, the superblock starts with 151767 SYS a month and will decline 5% every year. Read more about it here: https://medium.com/@virlces/virlces-4-0-rewards-specifications-a3dc01d85adf
+CC总量量9600万枚，每三个⽉月递减10%，举例例：9600 万*10%=960 万/90 天=10.6666667万，第⼀季度960万，每天释放10.6666667万，第二季度9600万减一季度960*10*=9504/90天=9.58933333万，以此类推。
+分配⽐比例例：
+⽤用户50%，技术6%，运营24%（其中包括：超级合伙⼈人5%、合伙⼈人3%、云商3%5000为1份、决策委3%、公司运营10%》，节点：20%（标准节点17%，平均分配所有节点按照时间先后顺序。社群节点1.5%、社区节点1%、超级节点0.5 %。）
 
 License
 -------
 
-Vircles Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+CCGO Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
-
-Development Process
--------------------
-
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/vpubchain/virlces/tags) are created
-regularly to indicate new official, stable release versions of Vircles Core.
-
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
-and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
 
 Testing
 -------
@@ -98,17 +46,3 @@ Changes should be tested by somebody other than the developer who wrote the
 code. This is especially important for large or high-risk changes. It is useful
 to add a test plan to the pull request description if testing the changes is
 not straightforward.
-
-Translations
-------------
-
-Changes to translations as well as new translations can be submitted to
-[Vircles Core's Transifex page](https://www.transifex.com/virlces/virlces/).
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
-
-Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/virlces-translators).
