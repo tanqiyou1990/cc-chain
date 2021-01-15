@@ -1,0 +1,33 @@
+# /etc/conf.d/virclesd: config file for /etc/init.d/virclesd
+
+# Config file location
+#SYSCOIND_CONFIGFILE="/etc/syscoin/vircles.conf"
+
+# What directory to write pidfile to?  (created and owned by $SYSCOIND_USER)
+#SYSCOIND_PIDDIR="/var/run/virclesd"
+
+# What filename to give the pidfile
+#SYSCOIND_PIDFILE="${SYSCOIND_PIDDIR}/virclesd.pid"
+
+# Where to write virclesd data (be mindful that the blockchain is large)
+#SYSCOIND_DATADIR="/var/lib/virclesd"
+
+# User and group to own virclesd process
+#SYSCOIND_USER="syscoin"
+#SYSCOIND_GROUP="syscoin"
+
+# Path to virclesd executable
+#SYSCOIND_BIN="/usr/bin/virclesd"
+
+# Nice value to run virclesd under
+#SYSCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#SYSCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for virclesd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+SYSCOIND_SIGTERM_TIMEOUT=600
